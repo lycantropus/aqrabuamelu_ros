@@ -57,9 +57,6 @@ Control::Control( void )
     last_time_odometry_ = ros::Time::now();
     current_time_cmd_vel_ = ros::Time::now();
     last_time_cmd_vel_ = ros::Time::now();
-    pose_th_=0.0;
-    pose_x_=0.0;
-    pose_y_=0.0;
     // Find out how many servos/joints we have
     for( XmlRpc::XmlRpcValue::iterator it = SERVOS.begin(); it != SERVOS.end(); it++ )
     {
